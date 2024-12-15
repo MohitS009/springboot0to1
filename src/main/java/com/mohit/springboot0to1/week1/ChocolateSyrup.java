@@ -1,4 +1,4 @@
-package com.mohit.springboot0to1.class1;
+package com.mohit.springboot0to1.week1;
 
 import org.springframework.stereotype.Component;
 
