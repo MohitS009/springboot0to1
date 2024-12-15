@@ -16,7 +16,8 @@ public class SpringBoot0to1Application {
 	@Bean
 	public CommandLineRunner commandLineRunner(CakeBaker cakeBaker){
 		return runner -> {
-			cakeBaker.bakeCake();
+			String cakeOrdered = cakeBaker.bakeCake();
+			System.out.println(cakeOrdered);
 		};
 	}
 }

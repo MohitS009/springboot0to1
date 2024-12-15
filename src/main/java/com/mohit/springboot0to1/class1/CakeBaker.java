@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CakeBaker {
-    
+
     private final Frosting frosting;
     private final Syrup syrup;
 
@@ -15,8 +15,10 @@ public class CakeBaker {
         this.syrup = syrup;
     }
 
-    public void bakeCake(){
-        String frosting = frosting.getFrostingType();
-        String syrup = syrup.getSyrupType();
+    public String bakeCake(){
+       String frostingType = frosting.getFrostingType();
+       String syrupType = syrup.getSyrupType();
+
+        return "Baking cake, Flavour is "+frostingType+" and topping used " +syrupType;
     }
 }
